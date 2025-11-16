@@ -1,377 +1,243 @@
 # 🌐 Colmar Academy Webpage Project
 
-This project guides you through the process of creating a **responsive webpage**. You’ll work across three branches, each focusing on a different aspect of front-end development:
+➡️ **Live Demo:**  
+https://danialzac.github.io/fsd-colmar-academy-danial/
 
-**Branches**
+This project is a full front-end build of the **Colmar Academy landing page**, based on Codecademy’s specifications.
 
-1. **main:** Setting up the Skeleton
-2. **desktop-mode:** Creating the Desktop Design
-3. **responsive-mode:** Creating the Responsive Design
-
-## 🖥️ 1. Setting Up the Skeleton
-
-### 🎯 Objectives
-
-- In this branch, you will **set up the foundational structure** of the webpage using **semantic HTML5 elements**.
-- No CSS styling will be added yet — the focus is on creating a **well-organized and meaningful HTML layout**.
+I built the site across multiple branches to document my development process.
 
 ---
 
-### 🗂️ Files Involved
+## 🏷 Git Branches Used
 
-- `index.html`
+| Branch | Purpose |
+|--------|---------|
+| `main` | Initial HTML skeleton |
+| `version1` | Desktop layout styling |
+| `version1_1` | First responsive attempt |
+| `version2` | ⭐ Final working version (desktop + responsive) |
+| `Instructor’s-Version` | Reference branch (not my code) |
 
----
-
-### 🛠 Tasks
-
-You will:
-
-1. Create the base structure of the webpage with semantic HTML.
-2. Include placeholder comments (`<!-- TODO -->`) for future sections.
-3. Organize the layout into clear, meaningful sections.
+➡️ I am currently working in **`version2`**
 
 ---
 
-### 🔑 Key HTML Concepts Introduced
+## 🚀 Deployment
 
-| Concept                                                                  | Description                                                |
-| ------------------------------------------------------------------------ | ---------------------------------------------------------- |
-| `<!DOCTYPE html>`                                                        | Declares the document as HTML5.                            |
-| `<html lang="en">`                                                       | Defines the language of the page.                          |
-| `<meta charset="UTF-8">`                                                 | Ensures the webpage displays special characters correctly. |
-| `<meta name="viewport" content="width=device-width, initial-scale=1.0">` | Makes your site mobile-friendly.                           |
-| `<head>`                                                                 | Contains metadata such as the title and stylesheet links.  |
-| `<body>`                                                                 | Contains all visible webpage content.                      |
-| Semantic tags (`<header>`, `<nav>`, `<section>`, `<footer>`)             | Provide structure and meaning to the page layout.          |
-| Comments (`<!-- -->`)                                                    | Help mark unfinished sections and guide development.       |
+The site is deployed using **GitHub Pages**.
 
----
+To update the live version, I run:
 
-### Basic Page Layout
+```sh
+git add .
+git commit -m "update"
+git push
 
-Your HTML structure will include these main sections:
-
-| Section      | Purpose                                             |
-| ------------ | --------------------------------------------------- |
-| **Navbar**   | Displays the logo and navigation menu.              |
-| **Header**   | Introduces the academy and features a banner.       |
-| **Practice** | Describes continuous learning and self-improvement. |
-| **Events**   | Lists key activities and updates.                   |
-| **Learning** | (Placeholder) For showcasing programs and lessons.  |
-| **Thesis**   | (Placeholder) For featuring projects or research.   |
-| **Footer**   | Displays copyright and policies.                    |
+🖥️ 1. Setting Up the Skeleton
+🎯 Objective
 
 ---
 
-### Example Skeleton Structure
+## 🖥️ 1. Skeleton Setup (Branch: `main`)
 
-```html
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <!-- TODO -->
-    <!-- The meta tag sets the page's viewport to be mobile-friendly -->
+### 🎯 Purpose
+This branch contains the **initial project setup** — creating `index.html` and linking the project folders, before any CSS or layout styling was added.
 
-    <title>Colmar Academy</title>
-    <!-- TODO -->
-    <!-- Incorporate external css styles here -->
-  </head>
+### 📄 Files Created
 
-  <body>
-    <!-- 1. Start of Navbar -->
-    <nav>
-      <!--  TODO: Add logo and navigation menu -->
-    </nav>
-    <!-- End of Navbar -->
+| File | Purpose |
+|------|---------|
+| `index.html` | Base HTML document |
+| `assets/` | Folder for images & media |
+| `styles/` | Folder for CSS |
 
-    <!-- 2.  Start of header -->
-    <header>
-      <!-- TODO: Add hero image and welcome text -->
-    </header>
-    <!-- End of header -->
-
-    <!-- 3. Start of practice -->
-    <section id="practice">
-      <!-- TODO: Add practice description -->
-    </section>
-    <!-- End of practice -->
-
-    <!-- 3.1. Start of events -->
-    <section id="events">
-      <!-- TODO: Add events list -->
-    </section>
-    <!-- End of events -->
-
-    <!-- 4. Start of learning -->
-    <section id="learning">
-      <!-- TODO: Add learning highlights -->
-    </section>
-    <!-- End of learning -->
-
-    <!-- 5. Start of thesis -->
-    <section id="thesis">
-      <!-- TODO: Add featured project -->
-    </section>
-    <!-- End of thesis -->
-
-    <!-- 6. Start of footer -->
-    <footer>
-      <!-- TODO: Add footer links and info -->
-    </footer>
-    <!-- End of footer -->
-  </body>
-</html>
-```
+### 🔑 Key Notes
+- Only **semantic HTML structure** existed at this point.
+- No layout or styling was added yet.
+- Sections were marked with `<!-- TODO -->` comments for later development.
 
 ---
 
-## 🖥️ 2. Creating the Desktop Design
+## 🖥️ 2. Desktop Layout (Branch: `version1`)
 
-### 🎯 Objectives
+### 🎯 Purpose
+This branch introduces **full desktop styling** using CSS Flexbox and Grid.
 
-- In this branch, you will **transform the HTML skeleton into a desktop-ready webpage** using HTML + CSS.
-- You will apply layout techniques like **Flexbox** and **Grid**, add visual hierarchy, and style the main sections for large screens.
-
----
-
-### 🗂️ Files Involved
-
-- `index.html`
-- `styles/styles.css`
+### Key Additions
+- Navigation bar
+- Hero banner
+- Practice + Events sections
+- Desktop typography and colors
+- Footer
 
 ---
 
-### 🛠 Tasks
+## 🛠 3. Responsive Layout (Branches: `version1_1` → `version2`)
 
-You will:
+| Branch | What Happened |
+|--------|---------------|
+| `version1_1` | First attempt at mobile responsiveness |
+| `version2` | ⭐ Final working version — fully responsive |
 
-1. Link your HTML to the external CSS file (`styles.css`).
-2. Add the **meta viewport tag** for mobile support.
-3. Implement the sections: **Navbar**, **Header**, **Practice**, **Events**, and **Footer**.
-4. Use **Flexbox** for alignment and **Grid** for page layout.
-5. Apply color, typography, and spacing for a professional desktop appearance.
+### Key Mobile Fixes
+- Mobile navbar added
+- Images replaced with mobile variants
+- Flex sections stack vertically
+- Text resized for small screens
+- Hidden desktop elements using `display: none`
 
-### 🔑 Key Styling Concepts
+---
 
-| Concept          | Description                                            |
-| ---------------- | ------------------------------------------------------ |
-| **CSS Reset**    | Removes browser default margins and paddings.          |
-| **Flexbox**      | Aligns and distributes elements along a single axis.   |
-| **CSS Grid**     | Provides control over overall page structure.          |
-| **Typography**   | Controls text size, weight, and color for readability. |
-| **Hover states** | Improve interactivity for links and buttons.           |
+### 🚀 Final Result
 
-### 📄 Page Sections
+✔ Desktop & mobile views both working  
+✔ Matches Codecademy design specs  
+✔ Live deployment via GitHub Pages:
 
-#### ☑️ Navbar
+👉 https://danialzac.github.io/fsd-colmar-academy-danial/
 
-- Uses Flexbox for horizontal alignment.
-- Displays logo (`ic-logo.svg`) and navigation links.
-- “Colmar” is bold; “Academy” is light for contrast.
+---
 
-```html
-<!-- TODO -->
-<!-- 1. Start of Navbar -->
+---
+
+## 🚀 Live Deployment
+
+My final working version is live here:
+
+👉 **https://danialzac.github.io/fsd-colmar-academy-danial/**
+
+✔ Hosted on GitHub Pages  
+✔ Built from branch `version2`  
+✔ Fully responsive  
+
+
+🖥️ 1️⃣ Setting Up the Skeleton
+🎯 Objective
+Create the base HTML structure using semantic tags — no CSS yet.
+
+## 🗂️ Files Used
+
+| File / Folder | Purpose |
+|---------------|---------|
+| `index.html` | Main HTML structure |
+| `styles/styles.css` | Styling for all sections |
+| `assets/images/` | Images used across the site |
+| `assets/videos/` | Thesis exhibit video |
+
+
+
+🛠 Tasks Completed
+✔ Added semantic structural elements
+✔ Inserted <!-- TODO --> placeholders
+✔ Divided the page into meaningful sections
+
+🧩 Key HTML Concepts
+ConceptPurpose<header>, <nav>, <section>, <footer>Semantic layout structure<!DOCTYPE html>Defines HTML5<meta charset="UTF-8">Required for special characters<meta name="viewport" …>Enables responsive behaviorComments (<!-- -->)Mark future work
+
+🏗 Base Layout Structure
+<body>
+
+  <nav></nav>
+
+  <header></header>
+
+  <section id="practice"></section>
+
+  <section id="events"></section>
+
+  <section id="learning"></section>
+
+  <section id="thesis"></section>
+
+  <footer></footer>
+
+</body>
+
+
+🖥️ 2️⃣ Creating the Desktop Design
+🎯 Objective
+Convert the HTML skeleton into a fully styled desktop webpage.
+
+🗂 Files Used
+
+
+index.html
+
+
+styles/styles.css
+
+
+
+🛠 Tasks Completed
+✔ Added images and text content
+✔ Styled the page using Flexbox + Grid
+✔ Built navbar, header, practice, events, and footer sections
+✔ Applied typography + button styles
+
+💡 CSS Concepts Used
+ConceptPurposedisplay: flexAlign navigation + practice sectiondisplay: gridLayout content blockshover statesInteractive linksfont-weightVisual hierarchymax-width imagesPrevent overflow
+
+🧭 Navbar Example
 <nav>
   <a href="#">
-    <img
-      class="logo"
-      src="assets/images/ic-logo.svg"
-      alt="Colmar Academy Logo"
-    />
-    <span class="logoname logoname-bold">Colmar</span>
-    <span class="logoname logoname-light">Academy</span>
+    <img src="assets/images/ic-logo.svg" alt="Colmar Logo">
+    <span class="logoname-bold">Colmar</span>
+    <span class="logoname-light">Academy</span>
   </a>
+
   <ul>
-    <li><a href="#">Our Campus</a></li>
+    <li><a href="#">Campus</a></li>
     <li><a href="#">Online</a></li>
-    <li><a href="#">Our Companies</a></li>
-    <li><a href="#">Sign-in</a></li>
+    <li><a href="#">Companies</a></li>
+    <li><a href="#">Sign in</a></li>
   </ul>
 </nav>
-<!-- End of Navbar -->
-```
 
-#### ☑️ Header
 
-- Features a banner image and a textual call-to-action.
-- The `Start here` button is styled to stand out.
+📱 3️⃣ Creating the Responsive Mode
+🎯 Objective
+Make the webpage fully responsive for tablet and mobile screens.
 
-```html
-<!-- TODO -->
-<!-- 2.  Start of header -->
-<header class="imgcontainer">
-    <img src="assets/images/banner.jpg" alt="Homepage Banner">
-</header>
+🗂 Files Used
 
-<header>
-    <div>
-        <h1>
-            Learn something new everyday
-        </h1>
-        <h2>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-        </h2>
-        <a href="">
-            Start here
-        </a>
-    </div>
-</header>
-<!-- End of header -->
-```
 
-#### ☑️ Practice Section
+index.html
 
-- Combines an image and motivational text using Flexbox.
-- Includes a highlighted quote by “Emmanuel, Sr Strategist at Hiring.com”.
 
-```html
-<!-- TODO -->
-<!-- 3. Start of practice -->
-<section class="practice">
-    <div class="imgcontainer">
-        <img src="assets/images/information-main.jpg" alt="Practice Banner">
-    </div>
-    <div class="practice-text">
-        <h1>It doesn't hurt to keep practicing</h1>
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Commodi dolores soluta nemo veritatis repellat deleniti autem itaque asperiores alias cumque? Inventore amet perferendis dicta iste eveniet perspiciatis atque delectus dolorem.<span>Emmanuel, Sr Strategist at Hiring.com</span>
-        </p>
-    </div>
-</section>
-<!-- End of practice -->
-```
+styles/styles.css
 
-#### ☑️ Events Section
 
-- Displays three events with image, title, and link.
-- Uses a two-column grid layout for clean alignment.
 
-```html
-<!-- TODO -->
-<!-- 3.1. Start of events -->
-<section class="events">
-    
-    <div class="events-block">
+🛠 Tasks Completed
+✔ Created mobile navbar (#nav-mobile)
+✔ Used media queries to restructure layout under 640px
+✔ Swapped images for smaller devices
+✔ Adjusted font sizes and spacing
+✔ Made thesis video responsive
 
-        <img src="assets/images/information-orientation.jpg" alt="Event Orientation Image">
+🧠 Responsive Design Concepts
+ConceptPurpose@media queriesApply CSS at screen widthsdisplay: none / blockHide desktop navbar, show mobile navbarmax-width: 100%Prevent image overflowStack layoutVertical sections on small screens
 
-        <div class="events-text">
-            <h3>Orientation Date</h3>
-            <p>Tue 10/11 & Wed 10/12 8am-3pm</p>
-            <a href="">Read More</a>
-        </div>
-    </div>
-    
-    <div class="events-block">
-        
-        <img src="assets/images/information-campus.jpg" alt="Event Orientation Image">
-        
-        <div class="events-text">
-            <h3>Our Campus</h3>
-            <p>Find which campus is close to you</p>
-            <a href="">Read More</a>
-        </div>
-
-    </div>
-
-    <div class="events-block">
-        
-        <img src="assets/images/information-guest-lecture.jpg" alt="Event Orientation Image">
-        
-        <div class="events-text">
-            <h3>Our Guest Lecture</h3>
-            <p>Join a keynote with Oliver Sack about music in medical treatment</p>
-            <a href="#">Read More</a>
-        </div>
-
-    </div>
-</section>
-<!-- End of events -->
-```
-
-#### ☑️ Footer
-
-- Contains copyright.
-- Displays links for **Terms** and **Privacy Policy**.
-
-```html
-<!-- TODO -->
-<!-- 6. Start of footer -->
-<footer>
-    <p>&copy; 2024 Colmar Academy. All rights reserved.</p>
-    <ul>
-        <li><a href="#">Terms</a></li>
-        <li><a href="#">Privacy</a></li>
-    </ul>
-</footer>
-<!-- End of footer -->
-```
-
-### ✅ Expected Outcome
-
-A polished **desktop layout** of the landing page for Colmar Academy.  
-Responsiveness will be handled in **Branch 3**.
-
----
-
-## 🖥️ 3. Creating the Responsive Mode
-
-### 🎯 Objective
-
-In this branch, you’ll make the webpage **responsive** — adapting its layout to work seamlessly on **mobile and tablet screens**.  
-You’ll use **CSS media queries** to adjust layout, visibility, and spacing for smaller viewports.
-
-### 🗂️ Files Involved
-
-- `index.html`
-- `styles/styles.css`
-
----
-
-### 🛠 Tasks
-
-You will:
-
-1. Add a **mobile navigation bar** (`#nav-mobile`) that displays only on smaller screens.
-2. Create **mobile-specific images** for the Events section.
-3. Use **media queries** to:
-   - Hide or show elements based on screen width.
-   - Adjust Flexbox and Grid layouts for vertical stacking.
-   - Resize text and spacing for readability.
-4. Ensure that sections like **Practice** and **Footer** look clean and accessible on mobile devices.
-
----
-
-### 📱 Key Concepts in Responsive Design
-
-| Concept                 | Description                                                                    |
-| ----------------------- | ------------------------------------------------------------------------------ |
-| **Meta viewport tag**   | Tells browsers to control layout based on device width.                        |
-| **Media queries**       | CSS rules that apply only within specified screen width ranges.                |
-| **Flexible images**     | Using `max-width: 100%` and `height: auto` to prevent overflow.                |
-| **Visibility toggling** | Showing/hiding elements (`display: none` / `display: block`) for mobile views. |
-
----
-
-### ⚙️ Implementation Walkthrough
-
-#### 🧭 Mobile Navbar
-
-```html
+📱 Mobile Navbar Example
 <nav id="nav-mobile">
-  <a href="#">
-    <img src="assets/images/ic-logo.svg" alt="Mobile Logo Home" />
-  </a>
-  <a href="#">
-    <img src="assets/images/ic-on-campus.svg" alt="Mobile Logo Campus"/>
-  </a>
-  <a href="#"
-    ><img src="assets/images/ic-online.svg" alt="Mobile Logo Online"/>
-  </a>
-  <a href="#">
-    <img src="assets/images/ic-login.svg" alt="Mobile Logo Login"/>
-  </a>
+  <a href="#"><img src="assets/images/ic-logo.svg" /></a>
+  <a href="#"><img src="assets/images/ic-on-campus.svg" /></a>
+  <a href="#"><img src="assets/images/ic-online.svg" /></a>
+  <a href="#"><img src="assets/images/ic-login.svg" /></a>
 </nav>
-```
+
+
+🧪 Final Completion Checklist
+RequirementStatusHTML skeleton✅Desktop styling✅Responsive mode✅Semantic elements✅Git branches✅Deployment✅
+
+🏁 Result
+🎉 version2 contains the final working desktop + mobile website
+📱 Fully responsive on small screens
+🖥 Matches Codecademy desktop spec
+🚀 Successfully deployed via GitHub Pages
+
+👤 Author
+Name: <Danial>
+GitHub Repo: <version2>
+Live Site: <https://danialzac.github.io/fsd-colmar-academy-danial/>
