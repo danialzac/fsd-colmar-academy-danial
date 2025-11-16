@@ -1,37 +1,36 @@
 <!DOCTYPE html>
-<html lang="en">å
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <!-- The meta tag sets the page's viewport to be mobile-friendly -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Colmar Academy</title>
     <!-- TODO -->
-    <!-- Incorporate external css å here -->
+    <!-- Incorporate external css  here -->
     <link rel="stylesheet" href="styles/styles.css">
+</head>
 
-
-</head>å
-å
 <body class="container">
 
     <!-- TODO -->
     <!-- 1. Start of Navbar -->
-    <nav>
-        <a href="#">
-            <!--logo-->
-            <img class="logo" src="assets/images/ic-logo.svg" alt="Colmar Academy Logo">
-            <!--Organization Title-->
-            <span class="logoname logoname-bold">Colmar</span>
-            <span class="logoname logoname-light">Academy</span>
-            <!--Site Title-->
-            <ul>
-                <li><a href="#">Our Campus</a></li>
-                <li><a href="#">Online</a></li>
-                <li><a href="#">Our Companies</a></li>
-                <li><a href="#">Sign-in</a></li>
-        </a>
-    </nav>
+<nav>
+    <div class="nav-left">
+        <img class="logo" src="assets/images/ic-logo.svg" alt="Colmar Academy Logo">
+        <span class="logoname logoname-bold">Colmar</span>
+        <span class="logoname logoname-light">Academy</span>
+    </div>
+
+    <ul>
+        <li><a href="#">Our Campus</a></li>
+        <li><a href="#">Online</a></li>
+        <li><a href="#">Our Companies</a></li>
+        <li><a href="#">Sign-in</a></li>
+    </ul>
+</nav>
+
     <!-- End of Navbar -->
+     
     <!--Start of Navbar for Mobile-->
     <nav id="nav-mobile">
         <a href="#" class=""><img src="assets/images/ic-logo.svg" alt="Mobile Logo Home"></a>
@@ -40,7 +39,8 @@
         <a href="#" class=""><img src="assets/images/ic-login.svg" alt="Mobile Logo ic-login"></a>
     </nav>
     <!--End of Navbar for mobile-->
-    <!-- TODO -->
+   
+
     <!-- 2.  Start of header -->
     <!--left of header-->
     <header class="imagecontainer">
@@ -158,14 +158,22 @@
         </div>
     </section>
     <!-- End of learning -->
-
-    <!-- TODO -->
+    
     <!-- 5. Start of thesis -->
     <section class="thesis-section">
         <h1>Thesis exhibit</h1>
         <div class="thesis-grid">
             <div class="thesis-left">
-                <video class="thesis-video" src="assets/videos/thesis.mp4" alt="Reimagine urban"></video>
+                <video
+  class="thesis-video"
+  src="assets/videos/thesis.mp4"
+  controls
+  autoplay
+  muted
+  loop
+  playsinline
+></video>
+
                 <div>
                     <h3> Reimagine urban</h3>
                     <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis eaque nulla repudiandae deserunt voluptas temporibus at, eos odit nesciunt iusto magnam minima culpa consequatur recusandae, placeat perferendis. Sed, vitae in?</p>
@@ -193,8 +201,6 @@
 
     <!-- End of thesis -->
 
-
-    <!-- TODO -->
     <!-- 6. Start of footer -->
     <footer>
         <p>&copy; 2025 Colmar Academy. All rights reserved</p>
