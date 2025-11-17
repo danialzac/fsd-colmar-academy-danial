@@ -259,4 +259,4 @@ RequirementStatusHTML skeleton✅Desktop styling✅Responsive mode✅Semantic el
 Name: <Danial>
 GitHub Repo: <version2>
 Live Site: <https://danialzac.github.io/fsd-colmar-academy-danial/>
-```
+
