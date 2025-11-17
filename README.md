@@ -11,13 +11,13 @@ I built the site across multiple branches to document my development process.
 
 ## 🏷 Git Branches Used
 
-| Branch | Purpose |
-|--------|---------|
-| `main` | Initial HTML skeleton |
-| `version1` | Desktop layout styling |
-| `version1_1` | First responsive attempt |
-| `version2` | ⭐ Final working version (desktop + responsive) |
-| `Instructor’s-Version` | Reference branch (not my code) |
+| Branch                 | Purpose                                         |
+| ---------------------- | ----------------------------------------------- |
+| `main`                 | Initial HTML skeleton                           |
+| `version1`             | Desktop layout styling                          |
+| `version1_1`           | First responsive attempt                        |
+| `version2`             | ⭐ Final working version (desktop + responsive) |
+| `Instructor’s-Version` | Reference branch (not my code)                  |
 
 ➡️ I am currently working in **`version2`**
 
@@ -91,8 +91,8 @@ This branch introduces **full desktop styling** using CSS Flexbox and Grid.
 
 ### 🚀 Final Result
 
-✔ Desktop & mobile views both working  
-✔ Matches Codecademy design specs  
+✔ Desktop & mobile views both working
+✔ Matches Codecademy design specs
 ✔ Live deployment via GitHub Pages:
 
 👉 https://danialzac.github.io/fsd-colmar-academy-danial/
@@ -107,9 +107,9 @@ My final working version is live here:
 
 👉 **https://danialzac.github.io/fsd-colmar-academy-danial/**
 
-✔ Hosted on GitHub Pages  
-✔ Built from branch `version2`  
-✔ Fully responsive  
+✔ Hosted on GitHub Pages
+✔ Built from branch `version2`
+✔ Fully responsive
 
 
 🖥️ 1️⃣ Setting Up the Skeleton
@@ -203,10 +203,26 @@ Make the webpage fully responsive for tablet and mobile screens.
 
 
 index.html
-
-
 styles/styles.css
 
+🎨 Styling Techniques Used
+Feature	Tool Used
+Global Reset	*{ margin:0; padding:0; }
+Page Layout	CSS Grid (container class)
+Section Layout	Flexbox (nav, practice, events blocks)
+Font Consistency	System font stack (Arial / Helvetica)
+Design Tokens	CSS Variables (--transition-speed, --border-radius)
+Hover Effects	Button hover transition
+Card UI	Borders, shadows, spacing
+Responsive Images	max-width:100% + object-fit:cover
+
+🧩 Desktop Page Behavior
+
+✔ Navbar logo + links aligned with Flexbox
+✔ Two-column hero section (image left, text right)
+✔ Grid layout for learning cards (3 × 2)
+✔ Thesis section contains a self-playing muted video
+✔ Footer spans full width
 
 
 🛠 Tasks Completed
@@ -216,17 +232,19 @@ styles/styles.css
 ✔ Adjusted font sizes and spacing
 ✔ Made thesis video responsive
 
-🧠 Responsive Design Concepts
-ConceptPurpose@media queriesApply CSS at screen widthsdisplay: none / blockHide desktop navbar, show mobile navbarmax-width: 100%Prevent image overflowStack layoutVertical sections on small screens
+📱 3️⃣ Responsive Design (version1_1 → version2)
+🎯 Objective
 
-📱 Mobile Navbar Example
-<nav id="nav-mobile">
-  <a href="#"><img src="assets/images/ic-logo.svg" /></a>
-  <a href="#"><img src="assets/images/ic-on-campus.svg" /></a>
-  <a href="#"><img src="assets/images/ic-online.svg" /></a>
-  <a href="#"><img src="assets/images/ic-login.svg" /></a>
-</nav>
+Convert the desktop layout into a fully responsive mobile-first experience using media queries.
 
+🔧 Key Features Added
+Mobile Feature	Implementation
+Mobile Navbar	New <nav id="nav-mobile"> showing icons only
+Hide Desktop Nav	display: none; inside media query
+Mobile Event Images	class="events-img-mobile" only shown under 640px
+Layout Stack	Flex → Column, Grid → Single column
+Larger Tap Targets	Increased font sizes + spacing
+Mobile Typography	font-size: xx-large for headings
 
 🧪 Final Completion Checklist
 RequirementStatusHTML skeleton✅Desktop styling✅Responsive mode✅Semantic elements✅Git branches✅Deployment✅
@@ -241,3 +259,4 @@ RequirementStatusHTML skeleton✅Desktop styling✅Responsive mode✅Semantic el
 Name: <Danial>
 GitHub Repo: <version2>
 Live Site: <https://danialzac.github.io/fsd-colmar-academy-danial/>
+```
